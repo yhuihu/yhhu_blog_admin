@@ -6,13 +6,17 @@
 
 ## 预览地址
 
-暂未发布
+[blog.yhhu.xyz](http://blog.yhhu.xyz)
 
 ## 技术栈
 
 vue-cli + element-ui + mavon-editor + axios
 
 ## 传送门
+
+- [后端服务系统](https://github.com/yhuihu/blog-back)
+- [后台管理系统](https://github.com/yhuihu/yhhu_blog_admin)
+- [前台系统](https://github.com/yhuihu/yhhu_blog_front)
 
 ## 构建和运行
 

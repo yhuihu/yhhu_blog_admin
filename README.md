@@ -6,13 +6,17 @@
 
 ## 预览地址
 
-暂未发布
+[blog.yhhu.xyz](http://blog.yhhu.xyz)
 
 ## 技术栈
 
 vue-cli + element-ui + mavon-editor + axios
 
 ## 传送门
+
+- [后端服务系统](https://github.com/yhuihu/blog-back)
+- [后台管理系统](https://github.com/yhuihu/yhhu_blog_admin)
+- [前台系统](https://github.com/yhuihu/yhhu_blog_front)
 
 ## 构建和运行
 
@@ -24,9 +28,3 @@ npm run dev
 # 打包
 npm run build
 ```
-
-## BlahBlah
-
-如果本项目对您学习Vue或SpringBoot等有所帮助的话，请帮忙点颗⭐哦😁！
-
-如果您对本项目有什么意见或建议，也欢迎批评指正。

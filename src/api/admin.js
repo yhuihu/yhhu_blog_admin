@@ -3,7 +3,7 @@ import qs from 'qs'
 
 export function getInfo() {
   return request({
-    url: '/admin/detail',
+    url: '/user',
     method: 'get'
   })
 }
@@ -14,15 +14,15 @@ export function getInfo() {
  */
 export function updateAdmin(data) {
   return request({
-    url: '/admin/update',
-    method: 'post',
+    url: '/admin',
+    method: 'put',
     data: qs.stringify(data)
   })
 }
 
 export function login(data) {
   return request({
-    url: '/admin/login',
+    url: '/admin',
     method: 'post',
     data: qs.stringify(data)
   })
@@ -30,7 +30,7 @@ export function login(data) {
 
 export function logout() {
   return request({
-    url: '/admin/logout',
-    method: 'post'
+    url: '/admin',
+    method: 'delete'
   })
 }

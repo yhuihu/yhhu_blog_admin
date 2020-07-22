@@ -106,7 +106,7 @@ export default {
     // 初始化标签列表
     initTags() {
       fetchTagList(1, 100).then(response => {
-        this.tags = response.data.list
+        this.tags = response.data.records
       })
     },
     initForm() {
@@ -116,6 +116,7 @@ export default {
         for (const key in this.form) {
           this.form[key] = response.data[key]
         }
+        console.log(this.form)
         this.checkedTags = this.form.tag.split(',')
       })
     },

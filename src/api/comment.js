@@ -10,7 +10,7 @@ export function fetchComment(id) {
 
 export function fetchCommentList(page, size) {
   return request({
-    url: '/comment/list',
+    url: '/admin/comment',
     params: { page, size }
   })
 }
@@ -25,8 +25,8 @@ export function fetchCommentListByBlogId(blogId, page, size) {
 
 export function deleteComment(id) {
   return request({
-    url: '/comment/delete',
-    method: 'post',
+    url: '/admin/comment',
+    method: 'delete',
     params: { id }
   })
 }

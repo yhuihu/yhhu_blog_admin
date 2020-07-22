@@ -3,9 +3,9 @@
     <el-form-item label="昵称">
       <el-input v-model="form.nickname" class="inner-item" style="width: 50%;"/>
     </el-form-item>
-    <el-form-item label="用户名">
-      <el-input v-model="form.username" class="inner-item" style="width: 50%;"/>
-    </el-form-item>
+<!--    <el-form-item label="用户名">-->
+<!--      <el-input v-model="form.username" class="inner-item" style="width: 50%;"/>-->
+<!--    </el-form-item>-->
     <el-form-item label="头像">
       <lb-upload v-model="form.avatar" height="180px" class="inner-item" />
     </el-form-item>

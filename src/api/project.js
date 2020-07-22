@@ -1,32 +1,24 @@
 import request from '@/utils/request'
 import qs from 'qs'
 
-export function fetchProject(id) {
-  return request({
-    url: '/project/detail',
-    method: 'get',
-    params: { id }
-  })
-}
-
 export function fetchProjectList(page, size) {
   return request({
-    url: '/project/list',
+    url: '/admin/project',
     params: { page, size }
   })
 }
 
 export function deleteProject(id) {
   return request({
-    url: '/project/delete',
-    method: 'post',
+    url: '/admin/project',
+    method: 'delete',
     params: { id }
   })
 }
 
 export function addProject(data) {
   return request({
-    url: '/project/add',
+    url: '/admin/project',
     method: 'post',
     data: qs.stringify(data)
   })
@@ -34,8 +26,8 @@ export function addProject(data) {
 
 export function updateProject(data) {
   return request({
-    url: '/project/update',
-    method: 'post',
+    url: '/admin/project',
+    method: 'put',
     data: qs.stringify(data)
   })
 }

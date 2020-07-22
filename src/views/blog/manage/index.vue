@@ -78,9 +78,9 @@
     <el-pagination
       style="text-align: center"
       layout="prev,pager,next"
-      :page-size="data.pageSize"
+      :page-size="data.size"
       :total="data.total"
-      :current-page="data.pageNum"
+      :current-page="data.current"
       @current-change="handleCurrentChange"
     />
   </div>
@@ -106,7 +106,7 @@ export default {
     fetchData() {
       fetchBlogList(this.page, this.size).then(response => {
         this.data = response.data
-        this.list = response.data.list
+        this.list = response.data.records
       })
     },
     handleEdit(index, row) {

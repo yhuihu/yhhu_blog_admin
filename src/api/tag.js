@@ -11,22 +11,22 @@ export function fetchTag(id) {
 
 export function fetchTagList(page, size) {
   return request({
-    url: '/blog/tag/list',
+    url: '/admin/tag',
     params: { page, size }
   })
 }
 
 export function deleteTag(id) {
   return request({
-    url: '/blog/tag/delete',
-    method: 'post',
+    url: '/admin/tag',
+    method: 'delete',
     params: { id }
   })
 }
 
 export function addTag(data) {
   return request({
-    url: '/blog/tag/add',
+    url: '/admin/tag',
     method: 'post',
     data: qs.stringify(data)
   })
@@ -34,8 +34,8 @@ export function addTag(data) {
 
 export function updateTag(data) {
   return request({
-    url: '/blog/tag/update',
-    method: 'post',
+    url: '/admin/tag',
+    method: 'put',
     data: qs.stringify(data)
   })
 }

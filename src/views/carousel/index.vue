@@ -42,9 +42,9 @@
     <el-pagination
       style="text-align: center"
       layout="prev,pager,next"
-      :page-size="data.pageSize"
+      :page-size="data.size"
       :total="data.total"
-      :current-page="data.pageNum"
+      :current-page="data.current"
       @current-change="handleCurrentPageChange"
     />
 
@@ -105,7 +105,7 @@ export default {
   methods: {
     fetchData() {
       fetchCarouselList(this.page, this.size).then(response => {
-        this.list = response.data.list
+        this.list = response.data.records
         this.data = response.data
       })
     },

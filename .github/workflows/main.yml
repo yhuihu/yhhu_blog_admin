@@ -11,7 +11,7 @@ jobs:
       - name: Publish Docker
         uses: elgohr/Publish-Docker-Github-Action@2.11
         with:
-          name: yhhu_blog/front
+          name: yhhu_blog/admin
           # The login username for the registry
           username: ${{secrets.DOCKER_USERNAME}}
           # The login password for the registry

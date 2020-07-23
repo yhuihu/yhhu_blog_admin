@@ -16,8 +16,8 @@ jobs:
           username: ${{secrets.DOCKER_USERNAME}}
           # The login password for the registry
           password: ${{secrets.DOCKER_PASSWORD}}
-          # Use registry for pushing to a custom registry
-          registry: ${{secrets.DOCKER_REGISTRY}}
+          # Use registry for pushing to a custom registry 从secrets获取错误，可能缓存问题
+          registry: registry.cn-hangzhou.aliyuncs.com/yhhu_blog/admin
           # Use dockerfile when you would like to explicitly build a Dockerfile
           dockerfile: Dockerfile
           cache: true

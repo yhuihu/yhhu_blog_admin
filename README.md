@@ -10,7 +10,7 @@
 
 ## 技术栈
 
-vue-cli + element-ui + mavon-editor + axios
+vue-cli + element-ui + mavon-editor + axios + docker
 
 ## 传送门
 
